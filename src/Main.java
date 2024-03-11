@@ -6,7 +6,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         int line, pillar;
-        //7. Madde ---> Dizinin matris boyutları burada kullanıcıdan alınıyor.
+        //Dizinin matris boyutları burada kullanıcıdan alınıyor.
         System.out.println("Mayın Tarlası Oyununa Hoşgeldiniz !\nOynamak İstediğiniz Tahtanın Boyutları İçin ;");
         System.out.print("Satır Sayısını Giriniz : ");
         line = input.nextInt();
