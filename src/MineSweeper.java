@@ -86,12 +86,13 @@ public class MineSweeper {
     }
 
     public void createBoard(int[][] arr) {
-
         for (int i = 0; i < lineNumber; i++) {
             for (int j = 0; j < pillarNumber; j++) {
-                if (arr[i][j] >= 0)
-                    System.out.print(" ");
-                System.out.print(arr[i][j] + " ");
+                if (!openBoard[i][j]) {
+                    System.out.print("- ");
+                } else {
+                    System.out.print(arr[i][j] + " ");
+                }
             }
             System.out.println();
         }

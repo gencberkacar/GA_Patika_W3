@@ -12,8 +12,11 @@ public class Main {
         line = input.nextInt();
         System.out.print("Sütun Sayısını Giriniz : ");
         pillar = input.nextInt();
+        if (line < 2 || pillar < 2) {
+            System.out.println("Hata: Satır ve sütun sayıları en az 2 olmalıdır.");
+            return;
+        }
         System.out.println("NOT : Açtığınız Konum Hala '0' Görünmekte İse Konumun Çevresinde Mayın yoktur !");
-
         MineSweeper mine = new MineSweeper(line, pillar);
         mine.startGame();
     }
